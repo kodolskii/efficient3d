@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from efficient3d.efficientnet_pytorch_3d.utils.utils import (
+from efficient3d.efficientnet_pytorch_3d.utils import (
     round_filters,
     round_repeats,
     drop_connect,
