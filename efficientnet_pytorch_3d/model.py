@@ -194,13 +194,13 @@ class EfficientNet3D(nn.Module):
         x = self.extract_features(inputs)
         print(x.shape)
         if self._global_params.include_top:
-            # Pooling and final linear layer
-            x = self._avg_pooling(x)
-            print(x.shape)
-            x = x.view(bs, -1)
-            print(x.shape)
-            x = self._dropout(x)
-            print(x.shape)
+            # # Pooling and final linear layer
+            # x = self._avg_pooling(x)
+            # print(x.shape)
+            # x = x.view(bs, -1)
+            # print(x.shape)
+            # x = self._dropout(x)
+            # print(x.shape)
             x = self._fc(x)
             print(x.shape)
         return x
