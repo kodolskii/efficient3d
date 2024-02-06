@@ -201,7 +201,7 @@ class EfficientNet3D(nn.Module):
             # print(x.shape)
             # x = self._dropout(x)
             # print(x.shape)
-            x = torch.reshape(x,(2,-1,128))
+            # x = torch.reshape(x,(2,-1,128))
             x = self._fc(x)
             print(x.shape)
         return x
