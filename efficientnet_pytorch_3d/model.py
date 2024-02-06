@@ -192,7 +192,6 @@ class EfficientNet3D(nn.Module):
         bs = inputs.size(0)
         # Convolution layers
         x = self.extract_features(inputs)
-        print(x.shape)
         if self._global_params.include_top:
             # # Pooling and final linear layer
             # x = self._avg_pooling(x)
