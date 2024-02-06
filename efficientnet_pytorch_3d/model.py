@@ -175,7 +175,7 @@ class EfficientNet3D(nn.Module):
         # Blocks
         i = 0
         for idx, block in enumerate(self._blocks):
-            if i <= 10:
+            if i <= 8:
                 drop_connect_rate = self._global_params.drop_connect_rate
                 if drop_connect_rate:
                     drop_connect_rate *= float(idx) / len(self._blocks)
